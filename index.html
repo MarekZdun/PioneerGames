@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pioneer Games</title>
+        <meta name="description" content="Welcome to Pioneer Games. We create fun to play games that you can enjoy together with your friends and family. Our focus is on delivering games which are innovative and have great gameplay.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="css/fontawesome.min.css"/>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div id="header-inner">
+                <a id="logo"></a>
+                <nav>
+                    <a id="menu-icon"><i class="fa fa-bars"></i></a>
+                    <ul>
+                        <li><a id="button-home">Home</a></li>
+                        <li><a id="button-games">Games</a></li>
+                        <li><a id="button-contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home">
+            <div id="home-inner">
+                <img src="img/banner_250px.png" alt="banner">
+                <p>Welcome to Pioneer Games.<br> We create fun to play games that you can enjoy together with your friends and family. Our focus is on delivering games which are innovative and have great gameplay.</p>
+            </div>
+        </section>
+
+        <section id="games">
+            <div id="games-inner">
+                <h2>games</h2>
+                <section class="games-wrapper">
+                    <section class="single-game game-wrapper-one">
+                        <div class="game-screen-wrapper">
+                            <img class="game-screen" src="img/screen_fortDefender.jpg" alt="screen_fortDefender">
+                        </div>
+                        <h3>fort defender</h3>
+                        <a href="https://play.google.com/store/apps/details?id=com.MarekZdun.FortDefender" target="_blank">
+                            <img src="img/badge_googlePlay.png" alt="badge_googlePlay">
+                        </a>
+                    </section>
+                    <section class="single-game game-wrapper-two">
+                        <div class="game-screen-wrapper">
+                            <img class="game-screen" src="img/screen_raidOverJungle.jpg" alt="screen_raidOverJungle">
+                        </div>
+                        <h3>raid over jungle</h3>
+                        <a href="https://play.google.com/store/apps/details?id=com.marekzdun.raidoverjungle" target="_blank">
+                            <img src="img/badge_googlePlay.png" alt="badge_googlePlay">
+                        </a>
+                    </section>
+                </section>
+                <section class="games-wrapper">
+                    <section class="single-game game-wrapper-one">
+                        <div class="game-screen-wrapper">
+                            <img class="game-screen" src="img/screen_rocketSpaceOdyssey.jpg" alt="screen_rocketSpaceOdyssey">
+                        </div>
+                        <h3>rocket space odyssey</h3>
+                        <a href="https://play.google.com/store/apps/details?id=com.marekzdun.rocketspaceodyssey" target="_blank">
+                            <img src="img/badge_googlePlay.png" alt="badge_googlePlay">
+                        </a>
+                    </section>
+                    <section class="single-game game-wrapper-two">
+                        <div class="game-screen-wrapper">
+                            <img class="game-screen" src="img/screen_blockyDungeon.jpg" alt="screen_blockyDungeon">
+                        </div>
+                        <h3>blocky dungeon</h3>
+                        <div class="game-description"><h4>in development</h4></div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="contact-inner">
+                <h2>send a message</h2>
+                <form id="contact-form" action="" method="post">
+                    <div id="contact-form-wrapper">
+                        <div class="contact-form-wrapper-left">
+                            <fieldset>
+                                <input placeholder="Name: (required)" type="text" tabindex="1" required>
+                            </fieldset>
+                            <fieldset>
+                                <input placeholder="E-mail: (required)" type="email" tabindex="2" required>
+                            </fieldset>
+                        </div>
+                        <div class="contact-form-wrapper-right">
+                            <fieldset>
+                                <textarea placeholder="Message" tabindex="5" required></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-form-submit" data-submit="...Sending">Send</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer-inner">
+                <ul id="social">
+                    <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+                </ul>
+                <p>Copyright &copy; 2018 pioneer games. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="./script.js" type="text/javascript"></script>
+    </body>

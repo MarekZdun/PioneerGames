@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #eaeaea;
+    color: #404040;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 200%;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-bottom: 4%; 
+}
+
+h3 {
+    font-size: 150%;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    line-height: 130%;
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+header {
+    background-color: #eaeaea;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header #header-inner {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+header #header-inner #logo {
+    width: 120px;
+    height: 80px;
+    float: left;
+    padding: 5px;
+    background: url("../img/logo.png") no-repeat center;
+}
+
+header #header-inner nav {
+    float: right;
+}
+
+header #header-inner nav #menu-icon {
+    display: none;
+}
+
+header #header-inner nav #menu-icon i {
+    color: #404040;
+    font-size: 200%;
+}
+
+header #header-inner nav ul {
+    list-style-type: none;
+    overflow: auto;
+}
+
+header #header-inner nav ul li {
+    float: left;
+    padding: 30px 5px 0 80px;
+}
+
+header #header-inner nav ul li a {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 125%;
+    text-decoration: none;
+    color: #404040;
+}
+
+header #header-inner nav ul li a:hover {
+    color: turquoise;
+    cursor: pointer;
+}
+
+#home {
+    height: 100vh;
+    background: url("img/screen_fortDefender_2.jpg") fixed no-repeat center top;
+    background-size: cover;
+}
+
+#home #home-inner {
+    height: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home #home-inner p {
+    color: white;
+    font-style: italic;
+    font-size: 140%;
+    text-align: center;
+    padding: 0 13% 0 13%;
+}
+
+#games {
+    overflow: hidden;
+}
+
+#games #games-inner {
+    height: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+#games #games-inner .games-wrapper {
+    overflow: hidden;
+}
+
+#games #games-inner .games-wrapper .single-game .game-screen-wrapper {
+    overflow: hidden;
+    width: 98%;
+    margin: 0 auto;
+}
+
+#games #games-inner .games-wrapper .single-game img {
+    display: block;
+    margin: 0 auto;
+}
+
+#games #games-inner .games-wrapper .single-game img.game-screen {
+    width: 100%;
+    height: auto;
+    transition: all, 0.3s;
+}
+
+#games #games-inner .games-wrapper .single-game img.game-screen:hover {
+    transform: scale(1.1);
+}
+
+#games #games-inner section.game-wrapper-one {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+#games #games-inner section.game-wrapper-two {
+    float: right;
+    width: 50%;
+    height: auto;
+}
+
+#games #games-inner .games-wrapper .single-game .game-description {
+    display: flex;
+    width: 215px;
+    height: 83px;
+    margin: 0 auto;
+}
+
+#games #games-inner .games-wrapper .single-game .game-description h4 {
+    margin: auto auto;
+    padding-bottom: 15px;
+}
+
+#contact {
+    overflow: hidden;
+}
+
+#contact #contact-inner {
+    height: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+#contact #contact-inner form#contact-form {
+    overflow: hidden;
+}
+
+#contact #contact-inner form#contact-form #contact-form-wrapper {
+    overflow: hidden;
+    padding: 1px 0;
+}
+
+#contact #contact-inner form#contact-form #contact-form-wrapper .contact-form-wrapper-left {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+#contact #contact-inner form#contact-form #contact-form-wrapper .contact-form-wrapper-right {
+    float: right;
+    width: 50%;
+    height: auto;
+}
+
+#contact #contact-inner form#contact-form #contact-form-wrapper input, #contact #contact-inner form#contact-form #contact-form-wrapper textarea {
+    display: block;
+    width: 96%;
+    padding: 5px;
+    font-family: 'Lato';
+}
+
+#contact #contact-inner form#contact-form #contact-form-wrapper input {
+    margin: 0 5px 30px 5px;
+}
+
+#contact #contact-inner form#contact-form #contact-form-wrapper textarea {
+    margin: 0 5px 0 5px;
+    height: 180px;
+    resize: none;
+}
+
+#contact #contact-inner form#contact-form button#contact-form-submit {
+    float: right;
+    margin: 7px;
+    padding: 6px 20px;
+    color: #404040;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    margin-top: 5%;
+    background-color: #333399;
+}
+
+footer #footer-inner {
+    height: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+footer #footer-inner #social {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer #footer-inner #social li {
+    display: inline;
+}
+
+footer #footer-inner #social li a i {
+    margin: 1%;
+    padding: 3% 2% 1% 2%;
+    color: white;
+    font-size: 300%;
+}
+
+footer #footer-inner #social li a i:hover {
+    color: turquoise;
+}
+
+footer #footer-inner p {
+    padding-bottom: 1%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 120%;
+    }
+
+    header {
+        background-color: transparent;
+    }
+
+    header #header-inner #logo {
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        padding: 5px 0 0 5px;
+        background: url("../img/logo_mobile.png") center no-repeat;
+    }
+
+    header #header-inner nav {
+        width: 100%;
+        height: auto;
+    }
+
+    header #header-inner nav #menu-icon {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    header #header-inner nav #menu-icon i {
+        float: right;
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    header #header-inner nav ul {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        padding: 5px;
+        background-color: #404040;
+        right: 0;
+        top: 42px;
+        width: 30%;
+        border: turquoise 1px solid;
+        border-radius: 10px 0 10px 10px;
+    }
+
+    header #header-inner nav ul li {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header #header-inner nav ul li a {
+        color: #eaeaea;
+    }
+
+    /* header #header-inner nav:hover ul {
+        display: block;
+    } */
+
+    #home #home-inner p {
+        font-size: 110%;
+        padding: 0 1% 0 1%;
+    }
+
+    #games #games-inner section.game-wrapper-one, #games #games-inner section.game-wrapper-two {
+        float: left;
+        width: 100%;
+    }
+
+    #games #games-inner .games-wrapper .single-game {
+        padding-bottom: 5%;
+    }
+
+    #contact #contact-inner form#contact-form #contact-form-wrapper input, #contact #contact-inner form#contact-form #contact-form-wrapper textarea {
+        width: 86%;
+    }
+}
