@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    let resizeTimer;
+    $(window).resize(function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(checkSize, 10);
+    });
+
     $('#button-home').click(function() {
         $('html,body').animate({
             scrollTop: $("#home").offset().top
@@ -15,18 +21,31 @@ $(document).ready(function() {
         }, 1000);
     });
 
-    var menuVisible = false;
+    let menuMobileVisible = false;
     $('#menu-icon').click(function() {
-      if (menuVisible) {
-        $('header #header-inner nav ul').css({'display':'none'});
-        menuVisible = false;
-        return;
-      }
-      $('header #header-inner nav ul').css({'display':'block'});
-      menuVisible = true;
+        if (menuMobileVisible) {
+            $('header #header-inner nav ul').css({'display':'none'});
+            menuMobileVisible = false;
+            return;
+        }
+        $('header #header-inner nav ul').css({'display':'block'});
+        menuMobileVisible = true;
     });
     $('header #header-inner nav ul').click(function() {
-      $(this).css({'display':'none'});
-      menuVisible = false;
+        if (menuMobileVisible){
+            $(this).css({'display':'none'});
+            menuMobileVisible = false;
+        }
     });
+
+    function checkSize() {
+        if ($('#menu-icon').css('display') == 'none' ){
+            $('header #header-inner nav ul').css({'display':'block'});
+            menuMobileVisible = false;
+        } else {
+            $('header #header-inner nav ul').css({'display':'none'});
+        }
+    }
+
+    checkSize();
 });
