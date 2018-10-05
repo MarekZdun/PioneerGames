@@ -60,7 +60,7 @@ header #header-inner #logo {
     height: 80px;
     float: left;
     padding: 5px;
-    background: url("../img/logo.png") no-repeat center;
+    background: url("./img/logo.png") no-repeat center;
 }
 
 header #header-inner nav {
@@ -298,7 +298,7 @@ footer #footer-inner p {
         width: 60px;
         height: 40px;
         padding: 5px 0 0 5px;
-        background: url("../img/logo_mobile.png") center no-repeat;
+        background: url("./img/logo_mobile.png") no-repeat center;
     }
 
     header #header-inner nav {
